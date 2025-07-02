@@ -1,0 +1,75 @@
+.footer {
+  background-color: #272727;
+  padding: 50px 30px; /* Top and bottom spacing, with left/right padding */
+  width: 100%;
+}
+
+.footerContent {
+  max-width: 1110px; /* Centralized content width */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 0 20px; /* Add space on the left and right inside the container */
+}
+
+.separator {
+  height: 1px;
+  border: none;
+  background-color: #fff; /* Thin white line at the top */
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footerColumns {
+  display: flex;
+  justify-content: flex-end; /* Align columns to the right */
+  gap: 40px; /* Maintain spacing between columns */
+  margin-top: 30px;
+}
+
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between items in a column */
+}
+
+.columnTitle {
+  color: #56b280;
+  margin: 0;
+  font: 600 16px/1.8 Poppins, sans-serif;
+}
+
+.columnNav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between links */
+}
+
+.footerLink {
+  color: #e1e1e1;
+  text-decoration: none;
+  font: 400 14px/1.8 Poppins, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover,
+.footerLink:focus {
+  color: #56b280; /* Change link color on hover/focus */
+  outline: none;
+}
+
+.footerLink:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+@media (max-width: 991px) {
+  .footerColumns {
+    flex-direction: column;
+    align-items: flex-start; /* Align columns to the left for smaller screens */
+    gap: 40px; /* Increase gap between columns */
+  }
+
+  .footerContent {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+}

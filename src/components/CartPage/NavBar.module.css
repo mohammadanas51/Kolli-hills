@@ -1,0 +1,74 @@
+.navDesktop {
+  background: #fff;
+  width: 100%;
+  padding-top: 13px;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1052px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #000;
+  font: 500 32px Poppins, sans-serif;
+  margin: 0;
+}
+
+.menuLinks {
+  display: flex;
+  gap: 40px;
+  color: var(--black, #272727);
+  font: 500 16px Roboto, sans-serif;
+}
+
+.dropdownWrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.dropdownIcon {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.linkGroup {
+  display: flex;
+  gap: 40px;
+}
+
+.iconGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.cartIcon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.userIcon {
+  width: 29px;
+  height: 29px;
+  object-fit: contain;
+  margin: auto 0;
+}
+
+.separator {
+  margin-top: 14px;
+  height: 1px;
+  border: 1px solid rgba(86, 178, 128, 0.2);
+}
+
+@media (max-width: 991px) {
+  .navContent {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+.profileForm {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+  padding: 40px 80px;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.formTitle {
+  color: #56b280;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.personalInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px 50px;
+  margin-bottom: 24px;
+}
+
+.passwordSection {
+  margin-top: 24px;
+}
+
+.passwordSection h3 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.cancelButton {
+  background: none;
+  border: none;
+  color: #000000;
+  font: 400 16px Poppins, sans-serif;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.submitButton {
+  background: #56b280;
+  border: none;
+  border-radius: 4px;
+  color: #fafafa;
+  font: 500 16px Poppins, sans-serif;
+  padding: 16px 48px;
+  cursor: pointer;
+}
+
+.cancelButton:hover,
+.submitButton:hover {
+  opacity: 0.9;
+}
+
+.cancelButton:focus-visible,
+.submitButton:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+@media (max-width: 991px) {
+  .profileForm {
+    padding: 20px;
+  }
+
+  .formActions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .submitButton,
+  .cancelButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+.contactPage {
+  background-color: rgba(223, 221, 221, 1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  padding: 110px 70px;
+  flex: 1;
+}
+
+.contentWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  gap: 20px;
+}
+
+.formWrapper {
+  flex: 0 0 70%;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    padding: 40px 20px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .formWrapper {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

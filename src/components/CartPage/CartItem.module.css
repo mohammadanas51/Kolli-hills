@@ -1,0 +1,113 @@
+.cartItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* Adjusted column proportions */
+  align-items: center;
+  gap: 20px; /* Proper spacing between columns */
+  padding: 20px; /* Adjust padding for spacing */
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.imageWrapper {
+  grid-column: 1 / 2; /* Image in the first column */
+  width: 100%;
+  max-width: 150px; /* Maintain consistent image size */
+  height: 100px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  grid-column: 2 / 3; /* Product name and Remove button in the second column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.productName {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.removeButton {
+  color: #ff4d4d;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.unitPrice {
+  grid-column: 3 / 4; /* Unit price in the third column */
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.quantityControl {
+  grid-column: 4 / 5; /* Quantity controls in the fourth column */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.increment, .decrement {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.amount {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.totalPrice {
+  grid-column: 5 / 6; /* Total price in the fifth column */
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+.checkoutButton {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+.subtotalAmount {
+  font-weight: bold;
+  color: green;
+}
+
+.taxNote {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

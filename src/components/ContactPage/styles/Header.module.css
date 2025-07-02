@@ -1,0 +1,157 @@
+.header {
+  background-color: #fff;
+  width: 100%;
+  padding: 18px 70px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+  display: flex;
+  width: 100%;
+  max-width: 1132px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #000;
+  font: 500 32px Poppins, sans-serif;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navGroup {
+  position: relative;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: none;
+  border: none;
+  padding: 8px;
+  font: 500 16px Roboto, sans-serif;
+  color: #272727;
+  cursor: pointer;
+}
+
+.navButton:hover,
+.navButton:focus {
+  color: #56b280;
+  outline: none;
+}
+
+.navButton:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.navArrow {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.navLinks {
+  display: flex;
+  gap: 40px;
+}
+
+.navLink {
+  color: #272727;
+  text-decoration: none;
+  font: 500 16px Roboto, sans-serif;
+  padding: 8px;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: #56b280;
+  outline: none;
+}
+
+.navLink:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.iconGroup {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover,
+.iconButton:focus {
+  outline: none;
+  opacity: 0.8;
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.cartIcon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.userIcon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+
+  .navLinks {
+    gap: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navArrow {
+    transition: none;
+  }
+}
+.logoImage {
+  height: 50px; /* Adjust the size of the logo */
+}
+
+.navLinkIcon {
+  margin-right: 8px; /* Add spacing between the icon and text */
+  height: 16px; /* Adjust the size of the icon */
+}
+
+.cartIcon,
+.userIcon {
+  height: 24px; /* Adjust the size of the icons */
+}
+

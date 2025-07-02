@@ -1,0 +1,94 @@
+.footer {
+  background-color: #272727;
+  color: #e1e1e1;
+  padding: 20px 0; /* Reduced padding */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContent {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #ffffff;
+  margin: 20px 0; /* Reduced margin */
+}
+
+.footerGrid {
+  display: flex; /* Use flexbox to align sections to the right */
+  justify-content: flex-end; /* Align content to the right */
+  gap: 8px; /* Reduced gap */
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Further reduced gap */
+}
+
+.sectionTitle {
+  color: #56b280;
+  font: 500 14px Poppins, sans-serif; /* Reduced font size */
+  margin: 0;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Reduced gap */
+}
+
+.footerLink {
+  color: #e1e1e1;
+  text-decoration: none;
+  font: 500 14px/1.8 Poppins, sans-serif; /* Reduced font size */
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: #56b280;
+}
+
+.footerLink:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.bottomBar {
+  background-color: #d9d9d9;
+  margin-top: 20px; /* Reduced margin */
+  padding: 10px 0; /* Reduced padding */
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .separator {
+    margin-bottom: 20px;
+  }
+
+  .footerGrid {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+    justify-content: flex-start; /* Align items to the top */
+    gap: 8px; /* Reduced gap on smaller screens */
+  }
+
+  .bottomBar {
+    margin-top: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footerLink {
+    transition: none;
+  }
+}

@@ -1,0 +1,128 @@
+.header {
+  background-color: #ffffff;
+  height: 80px; /* Reduced height */
+  padding: 0 70px; /* Removed top and bottom padding */
+  width: 100%;
+}
+
+.headerContent {
+  display: flex;
+  max-width: 1132px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%; /* Ensures the content aligns within the new height */
+}
+
+.logo {
+  color: #000000;
+  font: 500 16px Poppins, sans-serif; /* Reduced font size for compactness */
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navGroup {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 4px; /* Reduced padding */
+  font: 500 12px Roboto, sans-serif; /* Reduced font size */
+  color: #272727;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  opacity: 0.8;
+}
+
+.navButton:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.navIcon {
+  width: 10px;
+  height: 10px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 40px;
+}
+
+.navLink {
+  color: #272727;
+  text-decoration: none;
+  font: 500 12px Roboto, sans-serif; /* Reduced font size */
+}
+
+.navLink:hover {
+  color: #56b280;
+}
+
+.navLink:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.userActions {
+  display: flex;
+  gap: 20px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 4px; /* Reduced padding */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid #56b280;
+  outline-offset: 2px;
+}
+
+.profileIcon {
+  width: 20px; /* Reduced icon size */
+  height: 20px;
+}
+
+.cartIcon {
+  width: 18px; /* Reduced icon size */
+  height: 18px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    height: 20px; /* Ensure header stays at 20px height */
+    padding: 0 20px;
+  }
+
+  .headerContent {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}

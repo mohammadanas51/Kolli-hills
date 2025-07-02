@@ -1,0 +1,34 @@
+.profilePage {
+  background: #dfdddd;
+  min-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the content stretches to take the available height */
+}
+
+.mainContent {
+  flex: 1; /* Takes up remaining space */
+  padding: 20px; /* Adjusted to use less space */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media screen and (forced-colors: active) {
+  .profilePage {
+    border: 1px solid CanvasText;
+  }
+}

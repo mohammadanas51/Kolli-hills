@@ -1,0 +1,73 @@
+.infoContainer {
+  flex: 0 0 30%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.05);
+  padding: 46px 35px;
+  margin-top: -50px; /* Added margin-top to move it up a bit */
+}
+
+@media (max-width: 991px) {
+  .infoContainer {
+    padding: 30px 20px;
+    margin-top: -6px; /* Adjusted for smaller screens */
+  }
+}
+
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.methodHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.methodIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.methodTitle {
+  color: #000;
+  font: 500 16px Poppins, sans-serif;
+  margin: 0;
+}
+
+.methodContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.description,
+.detail {
+  font: 400 14px Poppins, sans-serif;
+  color: #000;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.divider {
+  height: 1px;
+  background-color: #000;
+  margin: 32px 0;
+}
+
+@media (max-width: 991px) {
+  .infoContainer {
+    padding: 30px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
